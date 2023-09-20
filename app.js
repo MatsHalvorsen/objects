@@ -20,7 +20,7 @@ delete student.rollno;
 
 console.log(student)
 
-*/
+
 //Write a JavaScript program to get the length of a JavaScript object.
 var student = {
     name : "David Rayy",
@@ -29,7 +29,7 @@ var student = {
 };
 var length = Object.keys(student).length;
 console.log(length)
-
+*/
 //Write a JavaScript program to display the reading status 
 //(i.e. display book name, author name and reading status) of the following books.
 var library = [ 
@@ -49,10 +49,27 @@ var library = [
         readingStatus: false
     }];
 
-    console.log(library[0])
+    for (var i = 0; i < library.length; i++) {
+        let book = "'" + library[i].title + "'" + ' bye ' + library[i].author + "'";
+        if (library[i].readingStatus) {
+            console.log("already read " + book)
+        } else {
+            console.log("you need to read " + book);
+        }
+    }
 
-    let showList = Object.keys(library)
+  /*
+  for (const key in library) {
+    if (library.hasOwnProperty(key)) {
+        value = library[key];
+        console.log(key, value)
+    }
+  }
+  */
 
-
-    let show = library[0];
-    console.log(show)
+//Write a bubble sort algorithm in JavaScript.
+//Note : Bubble sort is a simple sorting algorithm that works by repeatedly stepping through the list to be sorted,
+/*Sample Data:*/ 
+const bubble = [6,4,0, 3,-2,1]
+bubble.sort();
+console.log(bubble)
